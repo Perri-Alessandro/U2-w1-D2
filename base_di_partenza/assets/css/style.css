@@ -6,6 +6,9 @@ body {
   padding: 15px;
   background-image: url("../img/sfondo.png");
   background-position: center center;
+  position: relative;
+  min-width: 300px;
+  max-width: 730;
 }
 
 * {
@@ -21,7 +24,7 @@ main > article > h1 > img {
   top: 92%;
   left: 0%;
   opacity: 0.5;
-  width: 85%;
+  width: 95%;
 }
 main > article > p {
   font-size: 85%;
@@ -31,7 +34,7 @@ header > div p {
   font-size: 90%;
 }
 header > nav > ul {
-  font-size: 90%;
+  font-size: 140%;
 }
 main > article > section h2 {
   position: absolute;
@@ -45,17 +48,42 @@ fieldset input {
 section p {
   margin-top: 5%;
 }
-body > div {
+ul,
+li {
+  font-size: 60%;
 }
-.fa-calendar-day {
+.fa-calendar-day,
+.fa-plus {
   font-size: 200%;
   color: blue;
-  background-color: #c3c3c3;
+  background-color: rgba(188, 188, 188, 0.8);
   padding: 2%;
   border: 2px solid white;
   border-radius: 20%;
+  display: inline-block;
+  position: fixed;
+  right: 0;
+  bottom: 90px;
+  z-index: 2;
 }
-
+.fa-plus {
+  bottom: 165px;
+}
+.fa-arrow-up {
+  font-size: 200%;
+  color: red;
+  background-color: rgba(188, 188, 188, 0.8);
+  padding: 2%;
+  border: 2px solid white;
+  border-radius: 20%;
+  position: fixed;
+  right: 0;
+  bottom: 15px;
+  z-index: 2;
+}
+body div {
+  padding: 2%;
+}
 /* HEADER */
 header {
   background: rgb(0, 160, 198);
@@ -439,5 +467,10 @@ footer a {
   .social,
   .toTop {
     display: none;
+  }
+}
+@media screen and (min-width: 730px) {
+  body {
+    max-width: 1200px;
   }
 }
