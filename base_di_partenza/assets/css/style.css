@@ -81,6 +81,9 @@ li {
   bottom: 15px;
   z-index: 2;
 }
+article > h1 > span {
+  white-space: nowrap;
+}
 
 /* HEADER */
 header {
