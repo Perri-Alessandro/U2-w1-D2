@@ -8,7 +8,7 @@ body {
   background-position: center center;
   position: relative;
   min-width: 300px;
-  max-width: 730;
+  max-height: 100%;
 }
 
 * {
@@ -81,9 +81,7 @@ li {
   bottom: 15px;
   z-index: 2;
 }
-body div {
-  padding: 2%;
-}
+
 /* HEADER */
 header {
   background: rgb(0, 160, 198);
@@ -470,7 +468,88 @@ footer a {
   }
 }
 @media screen and (min-width: 730px) {
+  h1 {
+    font-size: 450%;
+  }
+  main > article > h1 > img {
+    position: absolute;
+    top: 92%;
+    left: 0%;
+    opacity: 0.5;
+    width: 78%;
+  }
+  main > article > p {
+    font-size: 150%;
+  }
+
+  header > div p {
+    font-size: 160%;
+  }
+  header > nav > ul {
+    font-size: 140%;
+  }
+  ul,
+  li {
+    font-size: 120%;
+  }
+  footer {
+    font-size: 140%;
+    padding: 2%;
+  }
+  main > article > section h2 {
+    width: 20%;
+  }
+  .fa-calendar-day {
+    bottom: 660px;
+  }
+  .fa-plus {
+    bottom: 750px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   body {
-    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1 {
+    font-size: 370%;
+  }
+  main > article > h1 > img {
+    top: 84%;
+    left: 42%;
+    width: 46%;
+  }
+  main > article > p {
+    font-size: 130%;
+  }
+
+  header > div p {
+    font-size: 150%;
+  }
+  header > nav > ul {
+    font-size: 120%;
+  }
+  ul,
+  li {
+    font-size: 115%;
+  }
+  footer {
+    font-size: 183%;
+    padding: 2%;
+  }
+  main > article > section h2 {
+    width: 20%;
+  }
+  .fa-calendar-day {
+    bottom: 640px;
+  }
+  .fa-plus {
+    bottom: 740px;
+  }
+  .fa-calendar-day,
+  .fa-plus,
+  .fa-arrow-up {
+    font-size: 120%;
   }
 }
